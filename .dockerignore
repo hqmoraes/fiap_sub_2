@@ -1,0 +1,24 @@
+# Bytecode e build
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+.venv/
+
+# Env
+.env
+.env.*
+
+# Coverage/pytest
+.coverage
+htmlcov/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Docker
+*.log
+/dist
+/build
