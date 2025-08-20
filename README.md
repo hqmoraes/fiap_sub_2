@@ -250,16 +250,3 @@ app/
 - **Logging**: Logs estruturados (sem exposição de dados sensíveis)
 - **Container**: Usuário não-root
 
-## 🔄 CI/CD
-
-Preparado para GitHub Actions com:
-- Build e push para Docker Hub
-- Deploy automático no Kubernetes
-- Testes automatizados
-
-**Secrets necessários no GitHub**:
-- `DOCKERHUB_USERNAME`
-- `DOCKERHUB_TOKEN`
-- `KUBE_CONFIG`
-
-
