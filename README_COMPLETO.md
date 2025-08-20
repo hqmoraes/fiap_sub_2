@@ -262,4 +262,37 @@ Preparado para GitHub Actions com:
 - `DOCKERHUB_TOKEN`
 - `KUBE_CONFIG`
 
+## 📋 Checklist de Produção
 
+- [ ] Configurar DNS e Ingress
+- [ ] Implementar monitoramento (Prometheus/Grafana)
+- [ ] Configurar backups automatizados
+- [ ] Implementar rate limiting
+- [ ] Configurar SSL/TLS
+- [ ] Implementar cache (Redis)
+- [ ] Configurar alertas
+- [ ] Documentar procedimentos operacionais
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 📞 Suporte
+
+Para dúvidas ou suporte:
+- Documentação: http://localhost:8000/docs
+- Issues: GitHub Issues
+- Email: [seu-email@exemplo.com]
+
+---
+
+**FIAP Tech Challenge - Fase 2**  
+*Plataforma de Revenda de Veículos - API REST*
