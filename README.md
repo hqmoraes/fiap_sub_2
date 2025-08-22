@@ -1,6 +1,26 @@
-# FIAP Vehicles – API de Revenda de Veículos
+# 🚀 FIAP Vehicles API - Clean Architecture
 
-API REST para plataforma de revenda de veículos automotores desenvolvida com FastAPI, seguindo princípios de Clean Architecture e SOLID.
+> **Sistema de Revenda de Veículos** implementado com **Clean Architecture rigorosa** conforme orientações acadêmicas
+
+[![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green.svg)](https://fastapi.tiangolo.com)
+[![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-orange.svg)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+[![SOLID](https://img.shields.io/badge/Principles-SOLID-red.svg)](https://en.wikipedia.org/wiki/SOLID)
+
+---
+
+## 🎯 **REESTRUTURAÇÃO COMPLETA**
+
+O projeto foi **completamente reestruturado** para seguir a **Clean Architecture** de forma rigorosa, implementando:
+
+- ✅ **Entities** puras com validações sem dependências externas
+- ✅ **Use Cases** com regras de negócio isoladas
+- ✅ **Controllers Clean** separados dos Controllers Web
+- ✅ **Gateways** como tradutores Entity ↔ Repository
+- ✅ **Presenters** para formatação de saída
+- ✅ **Inversão de Dependências** completa (SOLID)
+
+📖 **Documentação completa**: [CLEAN_ARCHITECTURE.md](./CLEAN_ARCHITECTURE.md)
 
 ## 🚀 Funcionalidades
 
