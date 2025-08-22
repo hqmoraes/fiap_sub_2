@@ -139,7 +139,7 @@ class SaleGateway:
             customer_cpf=data['customer_cpf'],
             sale_date=data['sale_date'],
             amount=Decimal(str(data['amount'])),  # float -> Decimal
-            payment_status=PaymentStatus(data['payment_status']),  # string -> Enum
+            payment_status=PaymentStatus(data['payment_status'].lower()),  # string -> Enum (lowercase)
             created_at=data.get('created_at'),
             updated_at=data.get('updated_at')
         )

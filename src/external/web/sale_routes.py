@@ -76,9 +76,13 @@ async def create_sale(
             detail={"error": str(e)}
         )
     except Exception as e:
+        print(f"Erro na criação de venda: {str(e)}")
+        print(f"Tipo do erro: {type(e)}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail={"error": "Erro interno do servidor"}
+            detail={"error": f"Erro interno: {str(e)}"}
         )
 
 
@@ -163,9 +167,13 @@ async def list_sales(
         return result
         
     except Exception as e:
+        print(f"Erro na listagem de vendas: {str(e)}")
+        print(f"Tipo do erro: {type(e)}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail={"error": "Erro interno do servidor"}
+            detail={"error": f"Erro interno: {str(e)}"}
         )
 
 

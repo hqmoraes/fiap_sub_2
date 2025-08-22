@@ -1,0 +1,21 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/hqmoraes/FIAP_Sub_2']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [525335] using WatchFiles
+🚀 Iniciando FIAP Vehicles API - Clean Architecture
+📡 Servidor rodando em: http://0.0.0.0:8000
+📖 Documentação: http://0.0.0.0:8000/docs
+🏗️  Arquitetura: Clean Architecture + SOLID
+INFO:     Started server process [525341]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+INFO:     127.0.0.1:43446 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39196 - "GET /vehicles/ HTTP/1.1" 500 Internal Server Error
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [525341]
+INFO:     Stopping reloader process [525335]

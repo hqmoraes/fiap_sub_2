@@ -1,0 +1,119 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/hqmoraes/FIAP_Sub_2']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [529430] using WatchFiles
+🚀 Iniciando FIAP Vehicles API - Clean Architecture
+📡 Servidor rodando em: http://0.0.0.0:8000
+📖 Documentação: http://0.0.0.0:8000/docs
+🏗️  Arquitetura: Clean Architecture + SOLID
+INFO:     Started server process [529433]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+INFO:     127.0.0.1:34394 - "GET /debug/database HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/hqmoraes/FIAP_Sub_2/src/external/web/vehicle_routes.py", line 128, in list_vehicles
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: {'error': True, 'error_code': 'INTERNAL_ERROR', 'message': "'AVAILABLE' is not a valid VehicleStatus", 'status': 'error'}
+Erro na listagem de veículos: 500: {'error': True, 'error_code': 'INTERNAL_ERROR', 'message': "'AVAILABLE' is not a valid VehicleStatus", 'status': 'error'}
+Tipo do erro: <class 'fastapi.exceptions.HTTPException'>
+INFO:     127.0.0.1:48578 - "GET /vehicles/ HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'src/gateways/vehicle_gateway.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [529433]
+INFO:     Started server process [530085]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+INFO:     127.0.0.1:46920 - "GET /vehicles/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46334 - "POST /vehicles/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60132 - "GET /vehicles/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40112 - "GET /sales/ HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'src/gateways/sale_gateway.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [530085]
+INFO:     Started server process [530520]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+INFO:     127.0.0.1:60150 - "GET /sales/ HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'src/external/web/sale_routes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [530520]
+INFO:     Started server process [530783]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Traceback (most recent call last):
+  File "/home/hqmoraes/FIAP_Sub_2/src/external/web/sale_routes.py", line 158, in list_sales
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: {'error': True, 'error_code': 'INTERNAL_ERROR', 'message': 'Erro ao listar vendas: (pymysql.err.OperationalError) (1054, "Unknown column \'sales.customer_cpf\' in \'field list\'")\n[SQL: SELECT sales.id AS sales_id, sales.vehicle_id AS sales_vehicle_id, sales.customer_cpf AS sales_customer_cpf, sales.sale_date AS sales_sale_date, sales.amount AS sales_amount, sales.payment_status AS sales_payment_status, sales.created_at AS sales_created_at, sales.updated_at AS sales_updated_at \nFROM sales]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'status': 'error'}
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+Erro na listagem de vendas: 500: {'error': True, 'error_code': 'INTERNAL_ERROR', 'message': 'Erro ao listar vendas: (pymysql.err.OperationalError) (1054, "Unknown column \'sales.customer_cpf\' in \'field list\'")\n[SQL: SELECT sales.id AS sales_id, sales.vehicle_id AS sales_vehicle_id, sales.customer_cpf AS sales_customer_cpf, sales.sale_date AS sales_sale_date, sales.amount AS sales_amount, sales.payment_status AS sales_payment_status, sales.created_at AS sales_created_at, sales.updated_at AS sales_updated_at \nFROM sales]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'status': 'error'}
+Tipo do erro: <class 'fastapi.exceptions.HTTPException'>
+INFO:     127.0.0.1:41628 - "GET /sales/ HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [530783]
+INFO:     Started server process [531008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+INFO:     127.0.0.1:45098 - "POST /debug/recreate-tables HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39326 - "GET /sales/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53404 - "POST /sales/ HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:47600 - "GET /vehicles/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41420 - "POST /vehicles/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:58444 - "POST /sales/ HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'src/external/web/sale_routes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [531008]
+INFO:     Started server process [552762]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Traceback (most recent call last):
+  File "/home/hqmoraes/FIAP_Sub_2/src/external/web/sale_routes.py", line 66, in create_sale
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 400: {'error': True, 'error_code': 'VALIDATION_ERROR', 'message': 'CPF inválido', 'status': 'error'}
+✅ Banco de dados inicializado com sucesso
+🏗️  Clean Architecture implementada
+📋 Camadas: Entity -> UseCase -> Controller -> Gateway -> Repository
+Erro na criação de venda: 400: {'error': True, 'error_code': 'VALIDATION_ERROR', 'message': 'CPF inválido', 'status': 'error'}
+Tipo do erro: <class 'fastapi.exceptions.HTTPException'>
+INFO:     127.0.0.1:37338 - "POST /sales/ HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:45250 - "POST /sales/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:36752 - "GET /sales/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42296 - "GET /vehicles/status/available HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57064 - "POST /vehicles/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:49906 - "GET /vehicles/status/available HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44054 - "PUT /sales/1/payment-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50542 - "POST /sales/webhook/payment HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39964 - "POST /sales/payment-webhook HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39968 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42628 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42634 - "GET /vehicles/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42642 - "GET /sales/ HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [552762]
+INFO:     Stopping reloader process [529430]

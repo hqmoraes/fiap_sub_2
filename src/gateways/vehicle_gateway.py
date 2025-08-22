@@ -160,7 +160,7 @@ class VehicleGateway:
             year=data['year'],
             price=Decimal(str(data['price'])),  # float -> Decimal
             color=data['color'],
-            status=VehicleStatus(data['status']),  # string -> Enum
+            status=VehicleStatus(data['status'].lower()),  # string -> Enum (lowercase)
             created_at=data.get('created_at'),
             updated_at=data.get('updated_at')
         )
