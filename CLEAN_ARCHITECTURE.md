@@ -1,14 +1,6 @@
 # 🏗️ FIAP Vehicles API - Clean Architecture Implementada
 
-## 📊 **REESTRUTURAÇÃO COMPLETA CONFORME CRÍTICAS**
 
-O projeto foi **completamente reestruturado** para seguir a **Clean Architecture** de forma rigorosa, conforme as orientações do Prof. Robert Santos.
-
----
-
-## 🎯 **NOVA ESTRUTURA - CLEAN ARCHITECTURE**
-
-```
 src/
 ├── entities/                 # 🔴 CAMADA MAIS PURA
 │   ├── vehicle.py           # Entity Vehicle com validações puras
@@ -43,7 +35,7 @@ src/
 
 ---
 
-## 🔥 **IMPLEMENTAÇÃO RIGOROSA - CLEAN ARCHITECTURE**
+## 🔥 **IMPLEMENTAÇÃO - CLEAN ARCHITECTURE**
 
 ### 🔴 **1. ENTITIES (Camada mais pura)**
 
@@ -352,5 +344,3 @@ src/
 - **Pode gerar PDF, relatórios** ✅
 
 ---
-
-**🎯 Agora o projeto segue a Clean Architecture de forma rigorosa e acadêmica!**
